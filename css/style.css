@@ -26,8 +26,8 @@ body div{
 
 
 .lesBoutons{
-    height: 390px;
-    padding: 5px 6px 5px 4px;
+    height: 430px;
+    padding: 15px 16px 15px 14px;
     display: flex;
     flex-direction: column;
     justify-content:space-around;
@@ -61,7 +61,7 @@ body div{
    border: solid 4px black ;
    border-radius: 50%;
    box-shadow: 2px 2px 2px black;
-   background-color: #ffffff;
+   background-color: rgb(154, 238, 199);
 
 }
  .caseChoix:active{
@@ -76,14 +76,18 @@ body div{
     width: 400px;
     height: 400px;
     background-size: cover;
-    filter: blur(40px) ;
+    filter: blur(50px);
+    
 
     
 }
 .clair {
-    filter: blur(0px);
-} 
+    filter: blur(0px)  ;
 
+} 
+.noDisplay{
+    display: none;
+}
 p{
     color: black;
     font-size: 3em;
@@ -91,11 +95,22 @@ p{
  button{
     padding: 20px;
     font-size: 2em;
+    box-shadow: 2px 2px 2px black;
  }
  h1{
     position: absolute;
     background-color: #93b6ae;
+    padding: 20px;
     border-radius: 20px;
     box-shadow: 2px 2px 2px black;
+    font-size: 4em;
+
+
+ }
+
+ .robot{
+    background-color: red;
+    background-image: url(./img/robot.png);
+    margin-top: 20px;
 
  }
