@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#ecranJeu{
+    display: flex;
+    align-items: center;
+}
+
+
+
+.lesBoutons{
+    
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    background-color: aquamarine;
+}
+
+.caseChoix{
+    width: 100px;
+    height: 100px;
+    background-color: bisque;
+}
+
+.affichage{
+    width: 400px;
+    height: 400px;
+    background-color: burlywood;
+}
+
+p{
+    color: black;
+    font-size: 3em;
+}
+
