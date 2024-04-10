@@ -95,8 +95,15 @@ p{
  button{
     padding: 20px;
     font-size: 2em;
+    border-radius: 20px;
     box-shadow: 2px 2px 2px black;
  }
+ button:active{
+    filter: grayscale(20%);
+    background-color: #f3f3f3;
+    box-shadow:  inset  2px 2px 2PX black;
+ }
+
  h1{
     position: absolute;
     top: 20px;
@@ -114,4 +121,15 @@ p{
     background-image: url(./img/robot.png);
     margin-top: 20px;
 
+ }
+
+ .caseScore{
+    width: 400px;
+    background-color: #93b6ae;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px black;
+    display: flex;
+    justify-content: space-between;
  }
