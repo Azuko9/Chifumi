@@ -7,40 +7,95 @@
 body{
     height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+body div{
+    display: flex;
+    
 }
 
 #ecranJeu{
     display: flex;
     align-items: center;
+    
 }
 
 
 
 .lesBoutons{
-    
-    height: 400px;
+    height: 390px;
+    padding: 5px 6px 5px 4px;
     display: flex;
     flex-direction: column;
     justify-content:space-around;
-    background-color: aquamarine;
+    border-radius: 20px;
+    background-color: #93b6ae;
+    box-shadow: 2px 2px 2px black;
+    
+
 }
 
-.caseChoix{
-    width: 100px;
-    height: 100px;
-    background-color: bisque;
+.pierre{
+    background-image: url(./img/pierre.png);
 }
+
+
+.papier{
+    background-image: url(./img/feuille.png);
+
+}
+
+.ciseau{
+    background-image: url(./img/ciseaux.png) ;
+}
+
+
+
+.caseChoix{
+    width: 90px;
+    height: 90px;
+   background-size: cover;
+   border: solid 4px black ;
+   border-radius: 50%;
+   box-shadow: 2px 2px 2px black;
+   background-color: #ffffff;
+
+}
+ .caseChoix:active{
+    filter: grayscale(20%);
+    background-color: #f3f3f3;
+    box-shadow:  inset  2px 2px 2PX black;
+ }
+
+
 
 .affichage{
     width: 400px;
     height: 400px;
-    background-color: burlywood;
+    background-size: cover;
+    filter: blur(40px) ;
+
+    
 }
+.clair {
+    filter: blur(0px);
+} 
 
 p{
     color: black;
     font-size: 3em;
 }
+ button{
+    padding: 20px;
+    font-size: 2em;
+ }
+ h1{
+    position: absolute;
+    background-color: #93b6ae;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px black;
 
+ }
