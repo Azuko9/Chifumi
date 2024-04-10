@@ -86,13 +86,13 @@ body div{
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    filter: blur(50px) contrast(800%) invert(1);
+    
     
 
     
 }
 .clair {
-    filter: blur(0px) contrast(100%) invert(0) ;
+    background-image: url(./img/ok.png);
 
 } 
 .noDisplay{

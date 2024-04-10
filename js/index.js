@@ -35,20 +35,21 @@ lerobot1.addEventListener("click", function () {
     console.log(computer);
 
     if (computer == 0) {
-        joueur1.classList.remove("papier", "ciseau", "clair");
-        joueur1.classList.add("pierre");
+        joueur1.classList.remove("papier", "ciseau");
+        joueur1.classList.add("pierre", "clair");
         valeur1 = A;
         score.classList.add("noDisplay");
 
+
     } else if (computer == 1) {
-        joueur1.classList.remove("pierre", "ciseau", "clair");
-        joueur1.classList.add("papier");
+        joueur1.classList.remove("pierre", "ciseau");
+        joueur1.classList.add("papier", "clair");
         valeur1 = B;
         score.classList.add("noDisplay");
 
     } else {
-        joueur1.classList.remove("papier", "pierre", "clair");
-        joueur1.classList.add("ciseau");
+        joueur1.classList.remove("papier", "pierre");
+        joueur1.classList.add("ciseau", "clair");
         valeur1 = C;
         score.classList.add("noDisplay");
     };
@@ -62,20 +63,20 @@ lerobot2.addEventListener("click", function () {
     console.log(computer);
 
     if (computer == 0) {
-        joueur2.classList.remove("papier", "ciseau", "clair");
-        joueur2.classList.add("pierre");
+        joueur2.classList.remove("papier", "ciseau");
+        joueur2.classList.add("pierre", "clair");
         valeur2 = A;
         score.classList.add("noDisplay");
 
     } else if (computer == 1) {
-        joueur2.classList.remove("pierre", "ciseau", "clair");
-        joueur2.classList.add("papier");
+        joueur2.classList.remove("pierre", "ciseau");
+        joueur2.classList.add("papier","clair");
         valeur2 = B;
         score.classList.add("noDisplay");
 
     } else {
-        joueur2.classList.remove("papier", "pierre", "clair");
-        joueur2.classList.add("ciseau");
+        joueur2.classList.remove("papier", "pierre");
+        joueur2.classList.add("ciseau", "clair");
         valeur2 = C;
         score.classList.add("noDisplay");
     };
@@ -85,41 +86,41 @@ lerobot2.addEventListener("click", function () {
 });
 
 laPierreJ1.addEventListener("click", function () {
-    joueur1.classList.remove("papier", "ciseau", "clair");
-    joueur1.classList.add("pierre");
+    joueur1.classList.remove("papier", "ciseau");
+    joueur1.classList.add("pierre", "clair");
     valeur1 = A;
     score.classList.add("noDisplay");
 });
 lafeuilleJ1.addEventListener("click", function () {
-    joueur1.classList.remove("pierre", "ciseau", "clair");
-    joueur1.classList.add("papier");
+    joueur1.classList.remove("pierre", "ciseau");
+    joueur1.classList.add("papier", "clair");
     valeur1 = B;
     score.classList.add("noDisplay");
 });
 
 leciseauJ1.addEventListener("click", function () {
-    joueur1.classList.remove("papier", "pierre", "clair");
-    joueur1.classList.add("ciseau");
+    joueur1.classList.remove("papier", "pierre");
+    joueur1.classList.add("ciseau", "clair");
     valeur1 = C;
     score.classList.add("noDisplay");
 });
 
 laPierreJ2.addEventListener("click", function () {
-    joueur2.classList.remove("papier", "ciseau", "clair");
-    joueur2.classList.add("pierre");
+    joueur2.classList.remove("papier", "ciseau");
+    joueur2.classList.add("pierre", "clair");
     valeur2 = A;
     score.classList.add("noDisplay");
 });
 lafeuilleJ2.addEventListener("click", function () {
-    joueur2.classList.remove("pierre", "ciseau", "clair");
-    joueur2.classList.add("papier");
+    joueur2.classList.remove("pierre", "ciseau");
+    joueur2.classList.add("papier", "clair");
     valeur2 = B;
     score.classList.add("noDisplay");
 });
 
 leciseauJ2.addEventListener("click", function () {
-    joueur2.classList.remove("papier", "pierre", "clair");
-    joueur2.classList.add("ciseau");
+    joueur2.classList.remove("papier", "pierre");
+    joueur2.classList.add("ciseau", "clair");
     valeur2 = C;
     score.classList.add("noDisplay");
 });
@@ -133,8 +134,8 @@ résultat.addEventListener("click", function () {
     if (valeur1 == null && valeur2 == null) {
         return;
     };
-    joueur1.classList.add("clair");
-    joueur2.classList.add("clair");
+    joueur1.classList.remove("clair");
+    joueur2.classList.remove("clair");
     score.classList.remove("noDisplay");
 
 
