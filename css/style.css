@@ -10,6 +10,9 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-image: url(./img/backgroundAK.png);
+    background-size: cover;
+    backdrop-filter: grayscale(30%);
 }
 
 body div{
