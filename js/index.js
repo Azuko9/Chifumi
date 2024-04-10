@@ -141,22 +141,22 @@ résultat.addEventListener("click", function () {
     if (valeur1 === valeur2) {
         score.innerHTML = "Egalité";
     } else if (valeur1 === A && valeur2 === B) {
-        score.innerHTML = "Joueur 2 gagne";
+        score.innerHTML = "J2 gagne";
         score2 += 1;
     } else if (valeur1 === A && valeur2 === C) {
-        score.innerHTML = "Joueur 1 gagne";
+        score.innerHTML = "J1 gagne";
         score1 += 1;
     } else if (valeur1 === B && valeur2 === A) {
-        score.innerHTML = "Joueur 1 gagne";
+        score.innerHTML = "J1 gagne";
         score1 += 1;
     } else if (valeur1 === B && valeur2 === C) {
-        score.innerHTML = "Joueur 2 gagne";
+        score.innerHTML = "J2 gagne";
         score2 += 1;
     } else if (valeur1 === C && valeur2 === A) {
-        score.innerHTML = "Joueur 2 gagne";
+        score.innerHTML = "J2 gagne";
         score2 += 1;
     } else if (valeur1 === C && valeur2 === B) {
-        score.innerHTML = "Joueur 1 gagne";
+        score.innerHTML = "J1 gagne";
         score1 += 1;
     } else {
         score.innerHTML = "merci de  jouer correctement!"
@@ -169,13 +169,13 @@ résultat.addEventListener("click", function () {
 
 
     if (score1 == 3) {
-        score.innerHTML = "Joueur 1 remporte la manche"
+        score.innerHTML = "J1 gagne la manche"
         score1 = 0;
         score2 = 0;
     }
 
     if (score2 == 3) {
-        score.innerHTML = "Joueur 2 remporte la manche"
+        score.innerHTML = "J2 gagne la manche"
         score1 = 0;
         score2 = 0;
     }

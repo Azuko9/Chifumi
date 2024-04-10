@@ -26,8 +26,9 @@ body div{
 
 
 .lesBoutons{
-    height: 430px;
+    height: 450px;
     padding: 15px 16px 15px 14px;
+    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content:space-around;
