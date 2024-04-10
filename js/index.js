@@ -124,8 +124,10 @@ leciseauJ2.addEventListener("click", function () {
     score.classList.add("noDisplay");
 });
 
-
-
+const leScore1 = document.querySelector("#score1");
+const leScore2 = document.querySelector("#score2");
+let score1 = 0;
+let score2 = 0;
 
 résultat.addEventListener("click", function () {
     if (valeur1 == null && valeur2 == null) {
@@ -140,26 +142,49 @@ résultat.addEventListener("click", function () {
         score.innerHTML = "Egalité";
     } else if (valeur1 === A && valeur2 === B) {
         score.innerHTML = "Joueur 2 gagne";
+        score2 += 1;
     } else if (valeur1 === A && valeur2 === C) {
         score.innerHTML = "Joueur 1 gagne";
+        score1 += 1;
     } else if (valeur1 === B && valeur2 === A) {
         score.innerHTML = "Joueur 1 gagne";
+        score1 += 1;
     } else if (valeur1 === B && valeur2 === C) {
         score.innerHTML = "Joueur 2 gagne";
+        score2 += 1;
     } else if (valeur1 === C && valeur2 === A) {
         score.innerHTML = "Joueur 2 gagne";
+        score2 += 1;
     } else if (valeur1 === C && valeur2 === B) {
         score.innerHTML = "Joueur 1 gagne";
+        score1 += 1;
     } else {
         score.innerHTML = "merci de  jouer correctement!"
         joueur1.classList.remove("pierre", "pappier", "ciseau");
         joueur2.classList.remove("pierre", "pappier", "ciseau");
     }
 
+
+
+
+
+    if (score1 == 3) {
+        score.innerHTML = "Joueur 1 remporte la manche"
+        score1 = 0;
+        score2 = 0;
+    }
+
+    if (score2 == 3) {
+        score.innerHTML = "Joueur 2 remporte la manche"
+        score1 = 0;
+        score2 = 0;
+    }
+
+
+    leScore1.innerHTML = score1;
+    leScore2.innerHTML = score2;
     valeur1 = null;
     valeur2 = null;
-
-
 });
 
 

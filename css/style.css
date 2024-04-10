@@ -99,6 +99,7 @@ p{
  }
  h1{
     position: absolute;
+    top: 20px;
     background-color: #93b6ae;
     padding: 20px;
     border-radius: 20px;

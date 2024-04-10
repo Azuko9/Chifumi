@@ -5,35 +5,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <script type="module" defer="" src="./js/index.js"></script>
     <title>Document</title>
 </head>
 
 <body>
-   
+
     <div>
-          <div class="lesBoutons">
-        <div id="bouton1" class="caseChoix pierre"></div>
-        <div id="bouton2"  class="caseChoix papier"></div>
-        <div id="bouton3" class="caseChoix ciseau"></div>
-        <div id="robot1" class="caseChoix robot"></div>
+        <div class="lesBoutons">
+            <div id="bouton1" class="caseChoix pierre"></div>
+            <div id="bouton2" class="caseChoix papier"></div>
+            <div id="bouton3" class="caseChoix ciseau"></div>
+            <div id="robot1" class="caseChoix robot"></div>
+
+
+        </div>
+
+        <div id="ecranJeu">
+            <div id="ecranJ1" class="affichage"></div>
+            
+            <div id="ecranJ2" class="affichage"></div>
+        </div>
+        <div class="lesBoutons">
+            <div id="bouton4" class="caseChoix pierre"></div>
+            <div id="bouton5" class="caseChoix papier"></div>
+            <div id="bouton6" class="caseChoix ciseau"></div>
+            <div id="robot2" class="caseChoix robot"></div>
+        </div>
     </div>
-    <div id="ecranJeu">
-        <div id="ecranJ1" class="affichage"></div>
-        <p>VS</p>
-        <div id="ecranJ2"class="affichage"></div>
-    </div>
-    <div class="lesBoutons">
-        <div id="bouton4" class="caseChoix pierre"></div>
-        <div id="bouton5"class="caseChoix papier"></div>
-        <div id="bouton6" class="caseChoix ciseau"></div>
-        <div id="robot2" class="caseChoix robot"></div>
-    </div>
-    </div>
-  
-    
+
     <button id="result">résultat</button>
+    <div>
+        <p id="score1">0</p>
+        <p style=" margin: 0 40PX;">  win </p>
+        <p id="score2">0</p>
+    </div>
+
     <h1 class="noDisplay"></h1>
 
 </body>
