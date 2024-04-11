@@ -21,6 +21,13 @@ const C = "c";
 let valeur1 = null,
     valeur2 = null;
 
+
+
+
+
+
+
+
 console.log(valeur1);
 const score = document.querySelector("h1");
 
@@ -70,7 +77,7 @@ lerobot2.addEventListener("click", function () {
 
     } else if (computer == 1) {
         joueur2.classList.remove("pierre", "ciseau");
-        joueur2.classList.add("papier","clair");
+        joueur2.classList.add("papier", "clair");
         valeur2 = B;
         score.classList.add("noDisplay");
 
@@ -130,6 +137,23 @@ const leScore2 = document.querySelector("#score2");
 let score1 = 0;
 let score2 = 0;
 
+
+const resultat = [...document.querySelectorAll(".caseChoix")];
+
+for (let i = 0; i < resultat.length; i++) {
+
+    resultat[i].addEventListener("click", function(){
+
+        if (valeur1 == null || valeur2 == null) {
+            résultat.classList.add("noDisplay");
+
+        } else {
+           
+            résultat.classList.remove("noDisplay");
+        };
+    });
+};
+
 résultat.addEventListener("click", function () {
     if (valeur1 == null && valeur2 == null) {
         return;
@@ -186,7 +210,9 @@ résultat.addEventListener("click", function () {
     leScore2.innerHTML = score2;
     valeur1 = null;
     valeur2 = null;
+    résultat.classList.add("noDisplay");
 });
+
 
 
 

@@ -93,6 +93,7 @@ body div{
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+   
     
     
 
@@ -131,6 +132,7 @@ p{
     border-color: black;
     font-size: 3em;
     text-align: center;
+    animation: 0.125s linear apparition;
    
 
 
@@ -155,3 +157,24 @@ p{
     border-color: black;
     justify-content: space-between;
  }
+
+
+
+ #result{
+    position: absolute;
+    bottom: 120px;
+    animation: 0.5s linear apparition , 0.5s linear 0.5s boomboom infinite alternate;
+   
+    
+ }
+
+
+ @keyframes apparition {
+    from { transform: scale(0); }
+    to   { transform: scale(1); }
+  }
+
+  @keyframes boomboom {
+    from { transform: scale(1); }
+    to   { transform: scale(0.95); }
+  }
