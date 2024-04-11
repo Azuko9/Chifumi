@@ -10,10 +10,15 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url(./img/backgroundAK.png);
+    background-image: url(../img/AK.png);
     background-size: cover;
     background-position: center;
     backdrop-filter: grayscale(30%);
+    font-family: fantasy;
+}
+
+h2{
+    font-size: 3em;
 }
 
 body div{
@@ -32,32 +37,33 @@ body div{
 
 
 .lesBoutons{
-    height: 350px;
+  
     width: auto;
-    padding: 15px 16px 15px 14px;
+    padding: 2px 16px 15px 14px;
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content:space-around;
+    justify-content:center;
     border-radius: 20px;
-    background-color: #93b6ae;
-    box-shadow: 2px 2px 2px black;
+    background-color: #ffffff44;
+    border-style: solid;
+    border-color: black;
     
 
 }
 
 .pierre{
-    background-image: url(./img/pierre.png);
+    background-image: url(../img/pierre.png);
 }
 
 
 .papier{
-    background-image: url(./img/feuille.png);
+    background-image: url(../img/feuille.png);
 
 }
 
 .ciseau{
-    background-image: url(./img/ciseaux.png) ;
+    background-image: url(../img/ciseaux.png) ;
 }
 
 
@@ -66,7 +72,8 @@ body div{
     width: 40px;
     height: 40px;
    background-size: cover;
-   border: solid 4px black ;
+   border: solid 2px black ;
+   margin: 2px;
    border-radius: 50%;
    box-shadow: 2px 2px 2px black;
    background-color: rgb(154, 238, 199);
@@ -92,7 +99,7 @@ body div{
     
 }
 .clair {
-    background-image: url(./img/ok.png);
+    background-image: url(../img/ok.png);
 
 } 
 .noDisplay{
@@ -117,29 +124,30 @@ p{
  h1{
     position: absolute;
     top: 10px;
-    background-color: #b2b693;
+    background-color: #ffffff;
     padding: 10px;
     border-radius: 10px;
-    box-shadow: 2px 2px 2px black;
-    font-size: 4em;
+    border-style: solid;
+    border-color: black;
+   
 
 
  }
 
  .robot{
     background-color: red;
-    background-image: url(./img/robot.png);
+    background-image: url(../img/robot.png);
     margin-top: 20px;
 
  }
 
  .caseScore{
     width: 200px;
-    background-color: #93b6ae;
+    background-color: #ffffff44;
     margin-top: 20px;
     padding: 20px;
     border-radius: 20px;
-    box-shadow: 2px 2px 2px black;
-    display: flex;
+    border-style: solid;
+    border-color: black;
     justify-content: space-between;
  }

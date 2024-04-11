@@ -160,7 +160,7 @@ résultat.addEventListener("click", function () {
         score.innerHTML = "J1 gagne";
         score1 += 1;
     } else {
-        score.innerHTML = "merci de  jouer correctement!"
+        score.innerHTML = "GAME OVER"
         joueur1.classList.remove("pierre", "pappier", "ciseau");
         joueur2.classList.remove("pierre", "pappier", "ciseau");
     }
@@ -187,6 +187,8 @@ résultat.addEventListener("click", function () {
     valeur1 = null;
     valeur2 = null;
 });
+
+
 
 
 
