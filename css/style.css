@@ -39,7 +39,7 @@ body div{
 .lesBoutons{
   
     width: auto;
-    padding: 2px 16px 15px 14px;
+    padding: 10px;
     text-align: center;
     display: flex;
     flex-direction: column;
